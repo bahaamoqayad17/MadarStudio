@@ -9,6 +9,9 @@ export const metadata: Metadata = {
   title: "Madar Studio",
   description:
     "Madar Studio is a creative studio that specializes in branding, design, and development.",
+  icons: {
+    icon: "/icon.png",
+  },
 };
 
 export default function RootLayout({
