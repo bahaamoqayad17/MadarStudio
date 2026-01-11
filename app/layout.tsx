@@ -30,6 +30,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ar">
+      <head>
+        <meta
+          name="google-site-verification"
+          content="kMOqF5SKJiuDAC2fM-3cr0Eay3elBg6pnFPVYRVNdbE"
+        />
+      </head>
       <body className={`antialiased`}>
         <TooltipProvider>
           <LanguageProvider>

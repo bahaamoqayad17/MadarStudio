@@ -10,13 +10,6 @@ const heroImages = [
   "/03.png",
   "/04.png",
   "/05.png",
-  // "/22.png",
-  // "/555.png",
-  // "/556.jpg",
-  // "/meow.png",
-  // "/5.jpg",
-  // "/6.jpg",
-  // "/7.jpg",
 ];
 
 const HeroSection = () => {
