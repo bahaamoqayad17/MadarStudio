@@ -75,7 +75,7 @@ const Team = () => {
   }, [team.length]);
 
   return (
-    <section className="section-padding overflow-hidden">
+    <section className="section-padding overflow-hidden" dir="ltr">
       <div className="container-wide mb-8">
         <AnimatedSection>
           <h2 className="text-caption mb-4 text-center text-2xl md:text-3xl font-bold">
