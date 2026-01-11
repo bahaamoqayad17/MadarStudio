@@ -12,6 +12,15 @@ export const metadata: Metadata = {
   icons: {
     icon: "/icon.png",
   },
+  openGraph: {
+    title: "Madar Studio",
+    description:
+      "Madar Studio is a creative studio that specializes in branding, design, and development.",
+    url: "https://madar-studio.com",
+    siteName: "Madar Studio",
+    locale: "ar_SA",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
