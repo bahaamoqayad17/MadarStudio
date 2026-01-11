@@ -16,8 +16,8 @@ const Index = () => {
         <About />
         <SelectedWork />
         <Team />
-        <CallToAction />
         <ContactForm />
+        <CallToAction />
       </main>
       <Footer />
     </div>

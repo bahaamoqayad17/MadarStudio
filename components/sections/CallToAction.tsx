@@ -12,7 +12,7 @@ const CallToAction = () => {
       <div className="container-wide">
         <AnimatedSection>
           <motion.a
-            href="mailto:hello@madarstudio.com"
+            href="#contact"
             className="block text-center group"
             whileHover={{ scale: 1.02 }}
             transition={{ duration: 0.3 }}
