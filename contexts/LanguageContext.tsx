@@ -24,17 +24,20 @@ const translations = {
     "header.getInTouch": "GET IN TOUCH",
 
     // Hero
-    "hero.line1": "EVERYTHING",
-    "hero.line2": "IS DESIGN, WE DESIGN",
-    "hero.line3": "EVERYTHING",
-    "hero.subline1": "BEYOND STANDARDS,",
-    "hero.subline2": "CREATING TIMELESS BRANDS",
+    "hero.line1": "Madar — Focused Design",
+    "hero.line2": "Real Impact. ©",
+    "hero.line3": "Creating Timeless Brands",
+    "hero.subline1": "Beyond Standards,",
+    "hero.subline2": "We Create Timeless Brands",
 
     // About
+    "about.title": "BEYOND STANDARDS, CREATING TIMELESS BRANDS",
+    "about.subtitle":
+      "brand identity design, brand building, visual design, and web design.",
     "about.description1":
-      "With over 10 years of experience, we've formed a collaborative, dynamic, and agile team that works end-to-end on complete processes including design, illustration, copywriting, and web design. We develop cases that externalize the essence of purposes, combining beauty, planning & exclusivity. Our work is present in major capitals and we've reached over 15 countries, launching more than 150 impactful brands and reaching an incredible diversity of niches.",
+      "With over seven years of experience, Madar Studio leads its journey in designing and building brands through a strategic vision that combines creativity, precision, and speed of execution. We work in complete harmony between thinking and design to deliver integrated solutions that include ",
     "about.description2":
-      "Far beyond aesthetics, planned design is one of the first and main fundamental elements of your branding strategy.",
+      ", and the impact of our work has extended to more than 15 countries, contributing to the launch and development of over 50 successful brands across diverse industries, giving us a deep understanding of different markets and cultures.",
     "about.location": "WORLDWIDE",
     "about.projects": "PROJECTS",
     "about.years": "YEARS",
@@ -52,6 +55,7 @@ const translations = {
     "services.illustration": "ILLUSTRATION",
     "services.3d": "3D",
     "services.motion": "MOTION",
+    "services.aiTools": "AI TOOLS",
 
     // Selected Work
     "work.title": "Featured Work",
@@ -75,6 +79,8 @@ const translations = {
     "team.brandStrategist": "Brand Strategist",
     "team.artDirector": "Art Director",
     "team.webDesigner": "Web Designer",
+    "team.founder": "Founder / CEO",
+    "team.designer": "Designer",
 
     // CTA
     "cta.title": "LET'S CREATE A NEW CHAPTER",
@@ -84,6 +90,23 @@ const translations = {
     "footer.contact": "Contact",
     "footer.follow": "Follow",
     "footer.rights": "All rights reserved.",
+
+    // Contact Form
+    "contact.title": "Get In Touch",
+    "contact.description":
+      "Let's discuss your project and create something amazing together.",
+    "contact.name": "Name",
+    "contact.namePlaceholder": "Your name",
+    "contact.email": "Email",
+    "contact.emailPlaceholder": "your.email@example.com",
+    "contact.subject": "Subject",
+    "contact.subjectPlaceholder": "What is this regarding?",
+    "contact.message": "Project Details",
+    "contact.messagePlaceholder": "Tell us about your project...",
+    "contact.submit": "Send Message",
+    "contact.submitting": "Sending...",
+    "contact.success": "Thank you! Your message has been sent successfully.",
+    "contact.error": "Something went wrong. Please try again.",
   },
   ar: {
     // Header
@@ -98,10 +121,16 @@ const translations = {
     "hero.subline2": "نصنع علامات تجارية خالدة",
 
     // About
+    "about.title":
+      "مدار ستوديو وشركاه — أبعد من الجماليات، التصميم المخطط هو أحد العناصر الأساسية الأولى والرئيسية لاستراتيجية علامتك التجارية.",
+    "about.subtitle":
+      "تصميم هوية العلامة التجارية، بناء العلامة التجارية، التصميم البصري، وتصميم الويب.",
     "about.description1":
-      "مع أكثر من 10 سنوات من الخبرة، شكلنا فريقًا تعاونيًا وديناميكيًا ومرنًا يعمل من البداية إلى النهاية على عمليات كاملة تشمل التصميم والرسم التوضيحي وكتابة المحتوى وتصميم الويب. نطور حالات تُظهر جوهر الأهداف، تجمع بين الجمال والتخطيط والتميز. عملنا موجود في العواصم الكبرى ووصلنا إلى أكثر من 15 دولة، وأطلقنا أكثر من 150 علامة تجارية مؤثرة ووصلنا إلى تنوع مذهل من المجالات.",
+      "مع أكثر من سبع سنوات من الخبرة، تقود مدار ستوديو رحلتها في تصميم وبناء العلامات التجارية من خلال رؤية استراتيجية تجمع بين الإبداع والدقة وسرعة التنفيذ. نعمل في انسجام كامل بين التفكير والتصميم لتقديم حلول متكاملة تشمل ",
     "about.description2":
-      "أبعد من الجماليات، التصميم المخطط هو أحد العناصر الأساسية الأولى والرئيسية لاستراتيجية علامتك التجارية.",
+      "، وامتد تأثير عملنا إلى أكثر من 15 دولة، مما ساهم في إطلاق وتطوير أكثر من 50 علامة تجارية ناجحة عبر صناعات متنوعة، مما منحنا فهماً عميقاً للأسواق والثقافات المختلفة.",
+    "about.description":
+      "مع أكثر من 7 سنوات من الخبرة، مدار ستوديو يقود رحلته في تصميم وبناء العلامات التجارية عبر رؤية استراتيجية متكاملة تجمع بين الإبداع والدقة  وسرعة التنفيذ. نعمل في إتحاد مثالي بين التفكير والتصميم لتقديم حلول متكاملة متضمنة التصميم المرصود للعلامة التجارية وبناء العلامة التجارية والتصميم البصري وتصميم الويب. أثبتت التأثيرات الخاصة بنا انتشارها إلى أكثر من 15 دولة، وتمكنت من تحقيق نجاح العلامات التجارية الناجحة لأكثر من 50 علامة تجارية في مختلف الصناعات، مما أعطى لنا فهم عميق للأسواق والثقافات المختلفة.",
     "about.location": "حول العالم",
     "about.projects": "مشروع",
     "about.years": "سنوات",
@@ -119,6 +148,7 @@ const translations = {
     "services.illustration": "الرسم التوضيحي",
     "services.3d": "ثلاثي الأبعاد",
     "services.motion": "الحركة",
+    "services.aiTools": "أدوات الذكاء الاصطناعي",
 
     // Selected Work
     "work.title": "أعمال مختارة",
@@ -142,6 +172,8 @@ const translations = {
     "team.brandStrategist": "استراتيجي العلامة التجارية",
     "team.artDirector": "المدير الفني",
     "team.webDesigner": "مصمم ويب",
+    "team.founder": "المؤسس / الرئيس التنفيذي",
+    "team.designer": "مصمم",
 
     // CTA
     "cta.title": "لنصنع فصلاً جديداً معاً",
@@ -151,6 +183,22 @@ const translations = {
     "footer.contact": "تواصل",
     "footer.follow": "تابعنا",
     "footer.rights": "جميع الحقوق محفوظة.",
+
+    // Contact Form
+    "contact.title": "تواصل معنا",
+    "contact.description": "دعنا نناقش مشروعك ونصنع شيئاً رائعاً معاً.",
+    "contact.name": "الاسم",
+    "contact.namePlaceholder": "اسمك",
+    "contact.email": "البريد الإلكتروني",
+    "contact.emailPlaceholder": "بريدك@example.com",
+    "contact.subject": "الموضوع",
+    "contact.subjectPlaceholder": "بماذا يتعلق هذا؟",
+    "contact.message": "تفاصيل المشروع",
+    "contact.messagePlaceholder": "أخبرنا عن مشروعك...",
+    "contact.submit": "إرسال الرسالة",
+    "contact.submitting": "جاري الإرسال...",
+    "contact.success": "شكراً لك! تم إرسال رسالتك بنجاح.",
+    "contact.error": "حدث خطأ ما. يرجى المحاولة مرة أخرى.",
   },
 };
 
