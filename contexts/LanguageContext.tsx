@@ -121,8 +121,7 @@ const translations = {
     "hero.subline2": "نصنع علامات تجارية خالدة",
 
     // About
-    "about.title":
-      "مدار ستوديو وشركاه — أبعد من الجماليات، التصميم المخطط هو أحد العناصر الأساسية الأولى والرئيسية لاستراتيجية علامتك التجارية.",
+    "about.title": "ما وراء المعايير، نصنع علامات تجارية خالدة",
     "about.subtitle":
       "تصميم هوية العلامة التجارية، بناء العلامة التجارية، التصميم البصري، وتصميم الويب.",
     "about.description1":
@@ -214,6 +213,20 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
   useEffect(() => {
     document.documentElement.dir = isRTL ? "rtl" : "ltr";
     document.documentElement.lang = language;
+    // Add/remove Arabic font class and update CSS variable
+    if (isRTL) {
+      document.documentElement.classList.add("font-arabic");
+      document.documentElement.style.setProperty(
+        "--font-sans",
+        '"KOSans", system-ui, sans-serif'
+      );
+    } else {
+      document.documentElement.classList.remove("font-arabic");
+      document.documentElement.style.setProperty(
+        "--font-sans",
+        '"Inter", system-ui, sans-serif'
+      );
+    }
   }, [language, isRTL]);
 
   const t = (key: string): string => {

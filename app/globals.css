@@ -4,6 +4,63 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Arabic Font Face Declarations */
+@font-face {
+  font-family: "KOSans";
+  src: url("/fonts/KOSans-Thin.otf") format("opentype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "KOSans";
+  src: url("/fonts/KOSans-ExtraLight.otf") format("opentype");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "KOSans";
+  src: url("/fonts/KOSans-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "KOSans";
+  src: url("/fonts/KOSans-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "KOSans";
+  src: url("/fonts/KOSans-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "KOSans";
+  src: url("/fonts/KOSans-SemiBold.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "KOSans";
+  src: url("/fonts/KOSans-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* MadarStudio Design System - Vissotto Style
    Bold, confident, black & white aesthetic
    Colors in HSL format
@@ -11,6 +68,10 @@
 
 @layer base {
   :root {
+    /* Font family variables */
+    --font-sans: "Inter", system-ui, sans-serif;
+    --font-arabic: "KOSans", system-ui, sans-serif;
+
     /* Core palette - pure black & white */
     --background: 0 0% 100%;
     --foreground: 0 0% 0%;
@@ -118,8 +179,15 @@
   }
 
   body {
-    @apply bg-background text-foreground font-sans;
+    @apply bg-background text-foreground;
+    font-family: var(--font-sans);
     font-feature-settings: "kern" 1, "liga" 1;
+  }
+
+  /* Arabic font styling - override font when Arabic class is present */
+  html.font-arabic body,
+  html.font-arabic body * {
+    font-family: var(--font-arabic) !important;
   }
 
   ::selection {
