@@ -20,7 +20,7 @@ const Footer = () => {
             </div>
 
             {/* Contact */}
-            <div>
+            {/* <div>
               <p className="text-xs text-muted-foreground uppercase tracking-wider mb-3">
                 {t("footer.contact")}
               </p>
@@ -30,7 +30,7 @@ const Footer = () => {
               >
                 hello@madarstudio.com
               </a>
-            </div>
+            </div> */}
 
             {/* Social */}
             <div>
@@ -39,20 +39,23 @@ const Footer = () => {
               </p>
               <div className="flex gap-4">
                 <a
-                  href="#"
+                  href="https://www.instagram.com/mohamedkh_9/"
                   className="text-sm hover:opacity-70 transition-opacity"
+                  target="_blank"
                 >
                   Instagram
                 </a>
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/in/mohamed-kh-34b2301a3/?skipRedirect=true"
                   className="text-sm hover:opacity-70 transition-opacity"
+                  target="_blank"
                 >
                   LinkedIn
                 </a>
                 <a
-                  href="#"
+                  href="https://www.behance.net/mohamed_kh"
                   className="text-sm hover:opacity-70 transition-opacity"
+                  target="_blank"
                 >
                   Behance
                 </a>

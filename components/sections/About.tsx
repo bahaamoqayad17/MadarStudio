@@ -8,8 +8,8 @@ const About = () => {
 
   const stats = [
     { value: t("about.location"), label: "" },
-    { value: "+150", label: t("about.projects") },
-    { value: "+10", label: t("about.years") },
+    { value: "+50", label: t("about.projects") },
+    { value: "+7", label: t("about.years") },
   ];
 
   const services = [
@@ -19,12 +19,9 @@ const About = () => {
     t("services.strategy"),
     t("services.verbalGuides"),
     t("services.branding"),
-    t("services.naming"),
     t("services.web"),
-    t("services.packaging"),
     t("services.illustration"),
-    t("services.3d"),
-    t("services.motion"),
+    t("services.aiTools"),
   ];
 
   return (
@@ -33,43 +30,53 @@ const About = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20">
           {/* Left Column - Description */}
           <AnimatedSection>
-            <p className="text-body text-base md:text-lg leading-relaxed mb-8">
-              {t("about.description1")}
-            </p>
-            <p className="text-body text-base md:text-lg leading-relaxed">
-              {t("about.description2")}
-            </p>
+            <h2 className="text-3xl md:text-5xl max-w-xl font-bold">
+              {t("about.title")}
+            </h2>
           </AnimatedSection>
 
           {/* Right Column - Stats */}
           <AnimatedSection delay={0.2}>
             <div className="flex flex-wrap gap-8 mb-12">
-              {stats.map((stat, index) => (
-                <div key={index} className="text-center">
-                  <p className="text-xl md:text-2xl font-medium">
-                    {stat.value}
-                  </p>
-                  {stat.label && (
-                    <p className="text-xs text-muted-foreground mt-1">
-                      {stat.label}
+              <span className="text-body text-base md:text-lg leading-relaxed mb-8">
+                {t("about.description1")}
+                <span className="text-black text-base font-bold md:text-lg leading-relaxed mb-8">
+                  {t("about.subtitle")}
+                </span>
+                {t("about.description2")}
+              </span>
+              <div className="border-t border-b border-border py-4 flex flex-wrap gap-8 w-full">
+                {stats.map((stat, index) => (
+                  <div key={index} className="text-center pt-4">
+                    <p className="text-xl md:text-2xl font-medium">
+                      {stat.value}
                     </p>
-                  )}
-                </div>
-              ))}
+                    {stat.label && (
+                      <p className="text-xs text-muted-foreground mt-1">
+                        {stat.label}
+                      </p>
+                    )}
+                  </div>
+                ))}
+              </div>
+
+              {/* Services Tags */}
             </div>
+
+            <AnimatedSection delay={0.3}>
+              <div className="flex flex-col flex-wrap gap-3 mt-12">
+                {services.map((service, index) => (
+                  <span
+                    key={index}
+                    className="text-body text-base md:text-lg leading-relaxed mb-2"
+                  >
+                    {service}
+                  </span>
+                ))}
+              </div>
+            </AnimatedSection>
           </AnimatedSection>
         </div>
-
-        {/* Services Tags */}
-        <AnimatedSection delay={0.3}>
-          <div className="flex flex-wrap gap-3 mt-12 pt-12 border-t border-border">
-            {services.map((service, index) => (
-              <span key={index} className="service-tag">
-                {service}
-              </span>
-            ))}
-          </div>
-        </AnimatedSection>
       </div>
     </section>
   );

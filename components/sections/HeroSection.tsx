@@ -5,12 +5,11 @@ import { useState, useEffect } from "react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const heroImages = [
+  "/01.png",
+  "/02.png",
   "/03.png",
-  "/03.png",
-  "/03.png",
-  "/03.png",
-  "/03.png",
-  "/03.png",
+  "/04.png",
+  "/05.png",
   // "/22.png",
   // "/555.png",
   // "/556.jpg",
@@ -41,14 +40,16 @@ const HeroSection = () => {
           transition={{ duration: 0.8, ease: [0.25, 0.1, 0.25, 1] }}
           className="mb-8"
         >
-          <h1 className="text-display">
+          <h1 className="text-2xl md:text-6xl font-bold my-4">
             {t("hero.line1")}
+            {/* {t("hero.line2")}
             <br />
-            {t("hero.line2")}
-            <br />
-            {t("hero.line3")}
+            {t("hero.line3")} */}
           </h1>
-          <span className="text-4xl md:text-5xl font-light mt-2 block">©</span>
+          {/* <span className="text-4xl md:text-5xl font-light mt-2 block"></span> */}
+          <h1 className="text-2xl md:text-6xl font-bold mb-4">
+            {t("hero.line2")}
+          </h1>
         </motion.div>
 
         {/* Hero Image Carousel */}
@@ -94,11 +95,11 @@ const HeroSection = () => {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="mt-8 flex items-start justify-between"
         >
-          <h2 className="text-headline max-w-xl">
+          {/* <h2 className="text-headline max-w-xl">
             {t("hero.subline1")}
             <br />
             {t("hero.subline2")}
-          </h2>
+          </h2> */}
           <motion.span
             animate={{ y: [0, 8, 0] }}
             transition={{ duration: 1.5, repeat: Infinity }}

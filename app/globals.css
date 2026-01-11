@@ -190,3 +190,10 @@
     color: hsl(var(--accent));
   }
 }
+
+@media (max-width: 768px) {
+  .logo-image {
+    width: 130px;
+    height: 35px;
+  }
+}

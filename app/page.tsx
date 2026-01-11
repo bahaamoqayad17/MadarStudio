@@ -4,6 +4,7 @@ import About from "@/components/sections/About";
 import SelectedWork from "@/components/sections/SelectedWork";
 import Team from "@/components/sections/Team";
 import CallToAction from "@/components/sections/CallToAction";
+import ContactForm from "@/components/sections/ContactForm";
 import Footer from "@/components/sections/Footer";
 
 const Index = () => {
@@ -16,6 +17,7 @@ const Index = () => {
         <SelectedWork />
         <Team />
         <CallToAction />
+        <ContactForm />
       </main>
       <Footer />
     </div>

@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { ArrowUpRight, ArrowUpLeft } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
+import Image from "next/image";
 
 const Header = () => {
   const { language, setLanguage, t, isRTL } = useLanguage();
@@ -18,9 +19,16 @@ const Header = () => {
     >
       <div className="mx-5 md:mx-6 mt-5 md:mt-6">
         <div className="bg-primary text-primary-foreground rounded-lg px-5 py-4 flex justify-between items-center">
-          <span className="text-sm font-medium tracking-tight">
+          <Image
+            src="/logo.png"
+            alt="Logo"
+            width={200}
+            height={40}
+            className="logo-image"
+          />
+          {/* <span className="text-sm font-medium tracking-tight">
             {t("header.brand")}
-          </span>
+          </span> */}
 
           <div className="flex items-center gap-4">
             {/* Language Toggle */}
@@ -48,7 +56,7 @@ const Header = () => {
             </div>
 
             <a
-              href="mailto:hello@madarstudio.com"
+              href="#contact"
               className="flex items-center gap-1.5 text-sm font-medium hover:opacity-70 transition-opacity"
             >
               <ArrowIcon className="w-4 h-4" />
